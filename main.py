@@ -1,3 +1,6 @@
+"""
+Um rpg de aventura em texto com uma simples história de um héroi que vai salvar uma princes de um dragão.
+"""
 # Importando pygame
 import pygame
 
