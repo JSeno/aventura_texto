@@ -1,5 +1,11 @@
 """
 Um rpg de aventura em texto com uma simples história de um héroi que vai salvar uma princes de um dragão.
+Farei uma pequena alteração no jogo, ele será um aventureiro de uma guilda que deve completar missões dependendo de rank.
+
+Os rank serão F,
+
+
+
 """
 # Importando pygame
 import pygame
