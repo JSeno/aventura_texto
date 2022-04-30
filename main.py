@@ -13,6 +13,8 @@ ataque magico x defesa magica
 Estarei usando um atributo fixo dependendo dos atributos dos personagens e um numero aleatório de 1 a 6 similando um dado.
 
 """
+from missoes import Missoes
+
 # Herói Clichê v.0.1
 # Tela de título
 print('Seja bem vindo ao:')
@@ -53,35 +55,16 @@ print('Só posso te passar pequenas missões dependendo de seu rank, quando voc�
 print('Vamos começar!')
 print('\n')
 
-# Missões Rank F
+# Missões  de Rank concluidas, começa em 0 cada vez que completa soma +1 quando chega a 10 muda de rank
 rank_f = 0
-
-missao_rank_f = {1: 'Coletar 10 folhas de cinauro',
-                 2: 'Uma criança de um nobre perdeu seu animal de estimação, você deve encontra-lo',
-                 3: 'A igreja do deus do Fogo da Luz precisa de alguns reparos em seu telhado, você precisa consertar',
-                 4: 'Verficar o que está ocorrendo com o Poço em frente ao mercado, nele está vindo um mal cheiro'
-                 }
-
-print('Qual dessas missões você gostaria de fazer?')
-print('1 - ' + missao_rank_f[1])
-print('2 - ' + missao_rank_f[2])
-print('3 - ' + missao_rank_f[3])
-print('4 - ' + missao_rank_f[4])
-print('Hoje somente temos essas 4 missões')
-missao_rank_f_choice = input('Digite 1, 2, 3 ou 4: ')
-if missao_rank_f_choice == '1':
-    missao_rank_f_choice = missao_rank_f[1]
-elif missao_rank_f_choice == '2':
-    missao_rank_f_choice = missao_rank_f[2]
-elif missao_rank_f_choice == '3':
-    missao_rank_f_choice = missao_rank_f[3]
-elif missao_rank_f_choice == '4':
-    missao_rank_f_choice = missao_rank_f[4]
-else:
-    print('Você não escolheu uma missão válida, vamos começar de novo')
-    exit()
-print('Você escolheu a missão: ' + missao_rank_f_choice)
-print('\n')
+rank_e = 0
+rank_d = 0
+rank_c = 0
+rank_b = 0
+rank_a = 0
+rank_s = 0
 
 
+print('Hoje temos somente essas missões para você, escolha qual deseja começar a fazer')
 
+# As missões estão na classe Missoes, vou importar de lá elas
